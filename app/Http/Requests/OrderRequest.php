@@ -13,7 +13,7 @@ class OrderRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -27,7 +27,7 @@ class OrderRequest extends FormRequest
             'product_id' => 'required|numeric|exists:products,id',
             'color_id' => 'required|numeric|exists:colors,id',
             'amount' => 'required|numeric|max:10',
-            'custom_print_photo' => 'image|size:2048',
+            'custom_print_photo' => 'image|max:2048',
             'email' => 'nullable|required_without:phone|email|max:100',
             'phone' => 'nullable|required_without:email|string|max:20',
             'address' => 'required|string|max:400',

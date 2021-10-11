@@ -26,7 +26,7 @@ POST: 127.0.0.1:8000/api/order
     "product_id": 1,
     "color_id": color_id colors cədvəlindən daxil edin,
     "amount": 4,
-    "custom_print_photo": 4, //type=file
+    "custom_print_photo": image125.jpg, //type=file
     "email": null,
     "phone": "+994993338823",
     "address": "Sumgayit, Azerbaijan"
@@ -36,7 +36,7 @@ POST: 127.0.0.1:8000/api/order
 -----------------
 PUT: 127.0.0.1:8000/api/order/1
 {
-    "delivery_date": "2021-02-02 23:22:02",
-    "preparation_date": "2021-02-04 20:22:02"
+    "delivery_date": "2021-10-15 23:22:02",
+    "preparation_date": "2021-10-15 20:22:02"
 }
 -----------------
